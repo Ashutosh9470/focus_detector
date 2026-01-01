@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Neuro Focus</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      width: 260px;
+      padding: 14px;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+
+    .status-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #020617;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+      border: 1px solid #1e293b;
+    }
+
+    .status-text {
+      font-size: 13px;
+      color: #cbd5f5;
+    }
+
+    .status-badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: #22c55e;
+      color: #022c22;
+    }
+
+    .status-badge.low {
+      background: #ef4444;
+      color: #450a0a;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      transition: transform 0.1s ease, opacity 0.1s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      text-align: center;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Neuro Focus</div>
+    <div class="subtitle">Real-time attention detection</div>
+
+    <div class="status-wrapper">
+      <div class="status-text">Current Focus</div>
+      <div id="statusBadge" class="status-badge">NORMAL</div>
+    </div>
+
+    <button id="cameraBtn" class="btn">
+      Enable Camera (Optional)
+    </button>
+
+    <div class="footer">
+      Privacy-first • Local processing
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

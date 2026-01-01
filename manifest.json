@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Neuro Focus Detector (MVP)",
+  "version": "1.0",
+  "description": "Detects attention drop using inactivity, tab switching, and optional camera",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
