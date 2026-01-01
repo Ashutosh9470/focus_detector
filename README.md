@@ -66,9 +66,4 @@ Contributions, issues, and feature requests are welcome. Please open an issue fi
 
 ---
 
-## 📝 License
-This project is provided without an explicit license in the repo. Add a `LICENSE` file to indicate the desired license (e.g., MIT) if you want to make the terms explicit.
-
----
-
 Happy hacking! 💡
